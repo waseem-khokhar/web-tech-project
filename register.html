@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Everyday Edit - Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="logo">Everyday Edit</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media and Info</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="form-heading">
+      <h1>Join the Everyday Edit</h1>
+      <p class="intro">Create your style profile so we can suggest pieces that fit you.</p>
+      <p>Fields marked with a star are required.</p>
+    </div>
+
+    <form class="signup-form" action="#" method="post">
+
+      <fieldset>
+        <legend>Your details</legend>
+
+        <div class="form-row">
+          <label for="fullname" class="required">Full name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Ayesha Khan" required minlength="3" maxlength="40">
+        </div>
+
+        <div class="form-row">
+          <label for="email" class="required">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="password" class="required">Password</label>
+          <input type="password" id="password" name="password" placeholder="8 to 20 characters" required minlength="8" maxlength="20">
+        </div>
+
+        <div class="form-row">
+          <label for="birthday">Date of birth</label>
+          <input type="date" id="birthday" name="birthday" min="1960-01-01" max="2010-12-31">
+        </div>
+
+        <div class="form-row">
+          <label for="website">Instagram or website</label>
+          <input type="url" id="website" name="website" placeholder="https://">
+        </div>
+
+        <div class="form-row">
+          <label for="customerid">Customer ID</label>
+          <input type="text" id="customerid" name="customerid" value="EE-0001" readonly>
+        </div>
+
+        <div class="form-row">
+          <label for="points">Loyalty points</label>
+          <input type="text" id="points" name="points" value="Available after your first order" disabled>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your style</legend>
+
+        <div class="form-row">
+          <p class="group-title">Shopping for</p>
+          <input type="radio" id="women" name="shopfor" value="women" checked>
+          <label for="women" class="inline-label">Women</label>
+          <input type="radio" id="men" name="shopfor" value="men">
+          <label for="men" class="inline-label">Men</label>
+          <input type="radio" id="both" name="shopfor" value="both">
+          <label for="both" class="inline-label">Both</label>
+        </div>
+
+        <div class="form-row">
+          <label for="size">Usual size</label>
+          <select id="size" name="size">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m" selected>M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="favcolor">Favourite colour</label>
+          <input type="color" id="favcolor" name="favcolor" value="#55664a">
+        </div>
+
+        <div class="form-row">
+          <label for="pieces">Pieces you buy each month</label>
+          <input type="number" id="pieces" name="pieces" min="1" max="20" value="2">
+        </div>
+
+        <div class="form-row">
+          <label for="budget">Monthly budget (USD 10 to 500)</label>
+          <input type="range" id="budget" name="budget" min="10" max="500" step="10" value="100">
+        </div>
+
+        <div class="form-row">
+          <p class="group-title">Pieces you like</p>
+          <input type="checkbox" id="shirts" name="likes" value="shirts" checked>
+          <label for="shirts" class="inline-label">Shirts</label>
+          <input type="checkbox" id="trousers" name="likes" value="trousers">
+          <label for="trousers" class="inline-label">Trousers</label>
+          <input type="checkbox" id="knitwear" name="likes" value="knitwear">
+          <label for="knitwear" class="inline-label">Knitwear</label>
+          <input type="checkbox" id="dresses" name="likes" value="dresses">
+          <label for="dresses" class="inline-label">Dresses</label>
+        </div>
+
+        <div class="form-row">
+          <label for="calltime">Best time for a call</label>
+          <input type="time" id="calltime" name="calltime">
+        </div>
+
+        <div class="form-row">
+          <label for="photo">Profile photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Style notes</label>
+          <textarea id="notes" name="notes" rows="5" cols="40" maxlength="200" placeholder="Tell us what you like to wear (max 200 characters)"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="form-row">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms" class="inline-label required">I agree to the terms and privacy policy</label>
+      </div>
+
+      <input type="submit" value="Create my account">
+      <input type="reset" value="Clear form">
+
+    </form>
+
+    <footer>
+      <p>&copy; Everyday Edit - A sample boutique</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

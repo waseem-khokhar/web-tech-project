@@ -1,0 +1,276 @@
+/* register.css - styles for the Register page (register.html) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#f7f6f1, #e5e0d3);
+  color: #333333;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- header and navigation (rounded pill links, centered) ---------- */
+header {
+  text-align: center;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 4px 3px;
+}
+
+nav a {
+  display: block;
+  padding: 8px 16px;
+  color: #3f4d37;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: rgba(85, 102, 74, 0.12);
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: rgba(85, 102, 74, 0.3);
+}
+
+/* attribute selector: highlights the link of this page */
+nav a[href="register.html"] {
+  background-color: #55664a;
+  color: #ffffff;
+}
+
+/* ---------- heading ---------- */
+.form-heading {
+  text-align: center;
+  margin: 25px 0;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+/* pseudo-element */
+h1::first-letter {
+  color: #55664a;
+  font-size: 52px;
+}
+
+/* general sibling combinator: every p after the h1 */
+.form-heading h1 ~ p {
+  color: #666666;
+  margin: 3px 0;
+}
+
+.intro::first-line {
+  font-weight: 500;
+}
+
+/* ---------- form box ---------- */
+.signup-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* descendant selector */
+.signup-form fieldset {
+  border: 1px solid #ddd8cb;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+
+/* child combinator */
+fieldset > legend {
+  color: #55664a;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 22px;
+  padding: 0 8px;
+}
+
+legend::before {
+  content: "~ ";
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.signup-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.group-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+}
+
+.signup-form .inline-label {
+  display: inline;
+  font-weight: 400;
+  margin-right: 12px;
+}
+
+/* pseudo-element: red star after required labels */
+.required::after {
+  content: " *";
+  color: #b5533c;
+}
+
+/* adjacent sibling combinator: an input right after a label */
+label + input {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* ---------- attribute selectors ---------- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+input[type="number"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #c9c4b5;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: #faf9f5;
+}
+
+input[type="color"] {
+  width: 60px;
+  height: 36px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="file"] {
+  font-size: 14px;
+}
+
+input[readonly] {
+  background-color: #efede5;
+  color: #777777;
+}
+
+input[disabled] {
+  background-color: #dddddd;
+  color: #888888;
+  cursor: not-allowed;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #55664a;
+}
+
+input:valid {
+  border-color: #9bb08c;
+}
+
+input:invalid {
+  border-color: #d9a899;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #55664a;
+  background-color: #ffffff;
+}
+
+input:focus:invalid {
+  background-color: #fdeeea;
+}
+
+input:focus:valid {
+  background-color: #eef4e8;
+}
+
+input[required] {
+  border-left: 4px solid #55664a;
+}
+
+::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+::selection {
+  background-color: #cfdcc3;
+}
+
+/* ---------- buttons ---------- */
+input[type="submit"] {
+  background-color: #55664a;
+  color: #ffffff;
+  border: none;
+  padding: 11px 24px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3f4d37;
+}
+
+input[type="reset"] {
+  background-color: #f7f6f1;
+  color: #3a3a3a;
+  border: 1px solid #c9c4b5;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #e8ecdf;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777777;
+  margin-top: 20px;
+}

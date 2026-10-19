@@ -1,0 +1,231 @@
+/* media.css - styles for the Media and Info page (media.html) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efece3;
+  color: #333333;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f6f1;
+}
+
+/* ---------- header and navigation (floated links) ---------- */
+.logo {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 36px;
+  margin: 5px 0 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3f4a38;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+nav a:hover {
+  background-color: #55664a;
+}
+
+/* ---------- banner with background image ---------- */
+.banner {
+  background-image: url("images/banner.png");
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+  padding: 50px 30px;
+  margin: 20px 0;
+}
+
+.banner-text {
+  width: 430px;
+  padding: 15px 20px;
+  background-color: rgba(247, 246, 241, 0.9);
+  border-radius: 6px;
+}
+
+.banner-text h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+}
+
+.banner-text p {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 17px;
+  color: #55664a;
+}
+
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #ddd8cb;
+  background-color: #ffffff;
+}
+
+/* ---------- float ---------- */
+.float-left {
+  float: left;
+  width: 200px;
+  margin: 0 20px 10px 0;
+  border-radius: 6px;
+}
+
+.clear-box {
+  clear: both;
+}
+
+/* ---------- position: relative and absolute ---------- */
+.new-section {
+  overflow: hidden;
+}
+
+.image-box {
+  position: relative;
+  float: right;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #55664a;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* ---------- video and audio ---------- */
+video {
+  display: block;
+  border: 2px solid #55664a;
+  margin-bottom: 10px;
+}
+
+audio {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ---------- lists side by side (inline-block) ---------- */
+.list-box {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.list-box li {
+  margin-bottom: 4px;
+}
+
+/* ---------- table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+th {
+  background-color: #55664a;
+  color: #ffffff;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd8cb;
+}
+
+tr:hover td {
+  background-color: #e8ecdf;
+}
+
+/* ---------- scroll box (overflow) ---------- */
+.scroll-box {
+  width: 100%;
+  height: 160px;
+  overflow: auto;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #c9c4b5;
+  background-color: #faf9f5;
+}
+
+.scroll-box h3 {
+  margin: 0;
+}
+
+/* ---------- position: fixed ---------- */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #55664a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#back-to-top:hover {
+  background-color: #3f4d37;
+}
+
+footer {
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+}
