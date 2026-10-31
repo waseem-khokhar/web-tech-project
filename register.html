@@ -19,6 +19,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -52,11 +53,6 @@
         <div class="form-row">
           <label for="birthday">Date of birth</label>
           <input type="date" id="birthday" name="birthday" min="1960-01-01" max="2010-12-31">
-        </div>
-
-        <div class="form-row">
-          <label for="website">Instagram or website</label>
-          <input type="url" id="website" name="website" placeholder="https://">
         </div>
 
         <div class="form-row">
@@ -142,6 +138,8 @@
         <label for="terms" class="inline-label required">I agree to the terms and privacy policy</label>
       </div>
 
+      <p id="form-message"></p>
+
       <input type="submit" value="Create my account">
       <input type="reset" value="Clear form">
 
@@ -153,5 +151,6 @@
 
   </div>
 
+  <script src="register.js"></script>
 </body>
 </html>
